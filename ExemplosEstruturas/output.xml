@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3 (Python 3.13.5 on win32)" generated="2025-09-17T16:23:23.863323" rpa="false" schemaversion="5">
+<suite id="s1" name="ExercicioIFLoops" source="C:\automacao_qa\CursoUdemy\ExemplosEstruturas\ExercicioIFLoops.robot">
+<test id="s1-t1" name="Exercicio Contagem Númerica" line="9">
+<kw name="Contagem Númerica">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-17T16:23:23.943221" elapsed="0.000465"/>
+</kw>
+<for flavor="IN">
+<iter>
+<if>
+<branch type="IF" condition="${CONTAGEM} == 5">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu sou o número 5!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-09-17T16:23:23.944245" elapsed="0.000014"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número 5!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-09-17T16:23:23.944316" elapsed="0.000010"/>
+</kw>
+<status status="NOT RUN" start="2025-09-17T16:23:23.944103" elapsed="0.000240"/>
+</branch>
+<branch type="ELSE IF" condition="${CONTAGEM} == 10">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu sou o número 10!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-09-17T16:23:23.944442" elapsed="0.000009"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número 10!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-09-17T16:23:23.944491" elapsed="0.000009"/>
+</kw>
+<status status="NOT RUN" start="2025-09-17T16:23:23.944360" elapsed="0.000155"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-17T16:23:23.944636" level="INFO">Eu não sou o número 5 e nem o 10!</msg>
+<arg>Eu não sou o número 5 e nem o 10!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-17T16:23:23.944565" elapsed="0.000102"/>
+</kw>
+<status status="PASS" start="2025-09-17T16:23:23.944529" elapsed="0.000155"/>
+</branch>
+<status status="PASS" start="2025-09-17T16:23:23.944082" elapsed="0.000613"/>
+</if>
+<var name="${CONTAGEM}">2</var>
+<status status="PASS" start="2025-09-17T16:23:23.944041" elapsed="0.000668"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="${CONTAGEM} == 5">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu sou o número 5!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-09-17T16:23:23.944894" elapsed="0.000009"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número 5!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-09-17T16:23:23.944943" elapsed="0.000009"/>
+</kw>
+<status status="NOT RUN" start="2025-09-17T16:23:23.944820" elapsed="0.000146"/>
+</branch>
+<branch type="ELSE IF" condition="${CONTAGEM} == 10">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu sou o número 10!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-09-17T16:23:23.945042" elapsed="0.000008"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número 10!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-09-17T16:23:23.945085" elapsed="0.000009"/>
+</kw>
+<status status="NOT RUN" start="2025-09-17T16:23:23.944978" elapsed="0.000130"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-17T16:23:23.945205" level="INFO">Eu não sou o número 5 e nem o 10!</msg>
+<arg>Eu não sou o número 5 e nem o 10!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-17T16:23:23.945156" elapsed="0.000078"/>
+</kw>
+<status status="PASS" start="2025-09-17T16:23:23.945119" elapsed="0.000132"/>
+</branch>
+<status status="PASS" start="2025-09-17T16:23:23.944812" elapsed="0.000450"/>
+</if>
+<var name="${CONTAGEM}">3</var>
+<status status="PASS" start="2025-09-17T16:23:23.944795" elapsed="0.000484"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="${CONTAGEM} == 5">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu sou o número 5!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-09-17T16:23:23.945449" elapsed="0.000010"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número 5!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-09-17T16:23:23.945498" elapsed="0.000009"/>
+</kw>
+<status status="NOT RUN" start="2025-09-17T16:23:23.945376" elapsed="0.000146"/>
+</branch>
+<branch type="ELSE IF" condition="${CONTAGEM} == 10">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu sou o número 10!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-09-17T16:23:23.945597" elapsed="0.000009"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número 10!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-09-17T16:23:23.945641" elapsed="0.000008"/>
+</kw>
+<status status="NOT RUN" start="2025-09-17T16:23:23.945533" elapsed="0.000130"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-17T16:23:23.945760" level="INFO">Eu não sou o número 5 e nem o 10!</msg>
+<arg>Eu não sou o número 5 e nem o 10!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-17T16:23:23.945707" elapsed="0.000074"/>
+</kw>
+<status status="PASS" start="2025-09-17T16:23:23.945675" elapsed="0.000121"/>
+</branch>
+<status status="PASS" start="2025-09-17T16:23:23.945369" elapsed="0.000437"/>
+</if>
+<var name="${CONTAGEM}">4</var>
+<status status="PASS" start="2025-09-17T16:23:23.945354" elapsed="0.000463"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="${CONTAGEM} == 5">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu sou o número 5!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-17T16:23:23.945985" elapsed="0.000304"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-17T16:23:23.946502" level="INFO">Eu sou o número 5!</msg>
+<arg>Eu sou o número 5!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-17T16:23:23.946361" elapsed="0.000181"/>
+</kw>
+<status status="PASS" start="2025-09-17T16:23:23.945910" elapsed="0.000661"/>
+</branch>
+<branch type="ELSE IF" condition="${CONTAGEM} == 10">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu sou o número 10!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-09-17T16:23:23.946652" elapsed="0.000012"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número 10!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-09-17T16:23:23.946709" elapsed="0.000012"/>
+</kw>
+<status status="NOT RUN" start="2025-09-17T16:23:23.946584" elapsed="0.000151"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<arg>Eu não sou o número 5 e nem o 10!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-09-17T16:23:23.946824" elapsed="0.000011"/>
+</kw>
+<status status="NOT RUN" start="2025-09-17T16:23:23.946748" elapsed="0.000107"/>
+</branch>
+<status status="PASS" start="2025-09-17T16:23:23.945902" elapsed="0.000966"/>
+</if>
+<var name="${CONTAGEM}">5</var>
+<status status="PASS" start="2025-09-17T16:23:23.945888" elapsed="0.000994"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="${CONTAGEM} == 5">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu sou o número 5!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-09-17T16:23:23.947100" elapsed="0.000011"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número 5!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-09-17T16:23:23.947152" elapsed="0.000010"/>
+</kw>
+<status status="NOT RUN" start="2025-09-17T16:23:23.947007" elapsed="0.000284"/>
+</branch>
+<branch type="ELSE IF" condition="${CONTAGEM} == 10">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu sou o número 10!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-09-17T16:23:23.947405" elapsed="0.000010"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número 10!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-09-17T16:23:23.947455" elapsed="0.000010"/>
+</kw>
+<status status="NOT RUN" start="2025-09-17T16:23:23.947310" elapsed="0.000170"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-17T16:23:23.947597" level="INFO">Eu não sou o número 5 e nem o 10!</msg>
+<arg>Eu não sou o número 5 e nem o 10!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-17T16:23:23.947529" elapsed="0.000093"/>
+</kw>
+<status status="PASS" start="2025-09-17T16:23:23.947491" elapsed="0.000148"/>
+</branch>
+<status status="PASS" start="2025-09-17T16:23:23.946999" elapsed="0.000651"/>
+</if>
+<var name="${CONTAGEM}">7</var>
+<status status="PASS" start="2025-09-17T16:23:23.946981" elapsed="0.000682"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="${CONTAGEM} == 5">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu sou o número 5!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-09-17T16:23:23.947853" elapsed="0.000010"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número 5!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-09-17T16:23:23.947903" elapsed="0.000009"/>
+</kw>
+<status status="NOT RUN" start="2025-09-17T16:23:23.947768" elapsed="0.000171"/>
+</branch>
+<branch type="ELSE IF" condition="${CONTAGEM} == 10">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu sou o número 10!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-09-17T16:23:23.948023" elapsed="0.000011"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número 10!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-09-17T16:23:23.948070" elapsed="0.000007"/>
+</kw>
+<status status="NOT RUN" start="2025-09-17T16:23:23.947952" elapsed="0.000138"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-17T16:23:23.948192" level="INFO">Eu não sou o número 5 e nem o 10!</msg>
+<arg>Eu não sou o número 5 e nem o 10!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-17T16:23:23.948134" elapsed="0.000080"/>
+</kw>
+<status status="PASS" start="2025-09-17T16:23:23.948101" elapsed="0.000129"/>
+</branch>
+<status status="PASS" start="2025-09-17T16:23:23.947757" elapsed="0.000483"/>
+</if>
+<var name="${CONTAGEM}">9</var>
+<status status="PASS" start="2025-09-17T16:23:23.947742" elapsed="0.000510"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="${CONTAGEM} == 5">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu sou o número 5!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-09-17T16:23:23.948416" elapsed="0.000009"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número 5!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-09-17T16:23:23.948465" elapsed="0.000009"/>
+</kw>
+<status status="NOT RUN" start="2025-09-17T16:23:23.948347" elapsed="0.000140"/>
+</branch>
+<branch type="ELSE IF" condition="${CONTAGEM} == 10">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu sou o número 10!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-17T16:23:23.948559" elapsed="0.000492"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-17T16:23:23.949228" level="INFO">Eu sou o número 10!</msg>
+<arg>Eu sou o número 10!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-17T16:23:23.949162" elapsed="0.000091"/>
+</kw>
+<status status="PASS" start="2025-09-17T16:23:23.948498" elapsed="0.000773"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<arg>Eu não sou o número 5 e nem o 10!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-09-17T16:23:23.949337" elapsed="0.000009"/>
+</kw>
+<status status="NOT RUN" start="2025-09-17T16:23:23.949286" elapsed="0.000084"/>
+</branch>
+<status status="PASS" start="2025-09-17T16:23:23.948340" elapsed="0.001041"/>
+</if>
+<var name="${CONTAGEM}">10</var>
+<status status="PASS" start="2025-09-17T16:23:23.948325" elapsed="0.001068"/>
+</iter>
+<var>${CONTAGEM}</var>
+<value>@{LISTA_NUMERICA}</value>
+<status status="PASS" start="2025-09-17T16:23:23.943769" elapsed="0.005640"/>
+</for>
+<status status="PASS" start="2025-09-17T16:23:23.942921" elapsed="0.006533"/>
+</kw>
+<status status="PASS" start="2025-09-17T16:23:23.942268" elapsed="0.007412"/>
+</test>
+<doc>Exercicio de Loops</doc>
+<status status="PASS" start="2025-09-17T16:23:23.890146" elapsed="0.060289"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="ExercicioIFLoops" id="s1" pass="1" fail="0" skip="0">ExercicioIFLoops</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3 (Python 3.13.5 on win32)" generated="2025-08-14T11:46:31.576593" rpa="false" schemaversion="5">
+<suite id="s1" name="WebTesting" source="C:\automacao_qa\CursoUdemy\RobotFramework\WebTesting">
+<suite id="s1-s1" name="Amazon Testes" source="C:\automacao_qa\CursoUdemy\RobotFramework\WebTesting\amazon_testes.robot">
+<test id="s1-s1-t1" name="Caso de Teste 01 - Acesso ao menu &quot;Eletrônicos&quot;" line="9">
+<kw name="Abrir Navegador" type="SETUP">
+<msg time="2025-08-14T11:46:31.659750" level="FAIL">No keyword with name 'Abrir Navegador' found.</msg>
+<status status="FAIL" start="2025-08-14T11:46:31.659187" elapsed="0.004428">No keyword with name 'Abrir Navegador' found.</status>
+</kw>
+<kw name="Fechar Navegador" type="TEARDOWN">
+<msg time="2025-08-14T11:46:31.665932" level="FAIL">No keyword with name 'Fechar Navegador' found.</msg>
+<status status="FAIL" start="2025-08-14T11:46:31.665382" elapsed="0.003913">No keyword with name 'Fechar Navegador' found.</status>
+</kw>
+<doc>Esse teste verifica o menu eletrônicos do site da amazon.com.br
+e verifica a categoria Computadores e Informática</doc>
+<tag>categorias</tag>
+<tag>menus</tag>
+<status status="FAIL" start="2025-08-14T11:46:31.655173" elapsed="0.014959">Setup failed:
+No keyword with name 'Abrir Navegador' found.
+
+Also teardown failed:
+No keyword with name 'Fechar Navegador' found.</status>
+</test>
+<test id="s1-s1-t2" name="Caso de Teste 02 - Pesquisa de um Produto" line="22">
+<kw name="Abrir Navegador" type="SETUP">
+<msg time="2025-08-14T11:46:31.678875" level="FAIL">No keyword with name 'Abrir Navegador' found.</msg>
+<status status="FAIL" start="2025-08-14T11:46:31.678348" elapsed="0.004337">No keyword with name 'Abrir Navegador' found.</status>
+</kw>
+<kw name="Fechar Navegador" type="TEARDOWN">
+<msg time="2025-08-14T11:46:31.684875" level="FAIL">No keyword with name 'Fechar Navegador' found.</msg>
+<status status="FAIL" start="2025-08-14T11:46:31.684337" elapsed="0.004185">No keyword with name 'Fechar Navegador' found.</status>
+</kw>
+<doc>Esse teste verifica a busca de um produto no site da amazon.com.br</doc>
+<tag>buscaprodutos</tag>
+<tag>listabusca</tag>
+<status status="FAIL" start="2025-08-14T11:46:31.674359" elapsed="0.015036">Setup failed:
+No keyword with name 'Abrir Navegador' found.
+
+Also teardown failed:
+No keyword with name 'Fechar Navegador' found.</status>
+</test>
+<test id="s1-s1-t3" name="Caso de Teste 03 - Adicionar Produto no Carrinho" line="30">
+<kw name="Abrir Navegador" type="SETUP">
+<msg time="2025-08-14T11:46:31.697972" level="FAIL">No keyword with name 'Abrir Navegador' found.</msg>
+<status status="FAIL" start="2025-08-14T11:46:31.697081" elapsed="0.004685">No keyword with name 'Abrir Navegador' found.</status>
+</kw>
+<kw name="Fechar Navegador" type="TEARDOWN">
+<msg time="2025-08-14T11:46:31.703989" level="FAIL">No keyword with name 'Fechar Navegador' found.</msg>
+<status status="FAIL" start="2025-08-14T11:46:31.703379" elapsed="0.003898">No keyword with name 'Fechar Navegador' found.</status>
+</kw>
+<doc>Esse teste verifica a adição de um produto no carrinho de compras</doc>
+<tag>adicionar_carrinho</tag>
+<status status="FAIL" start="2025-08-14T11:46:31.693091" elapsed="0.015154">Setup failed:
+No keyword with name 'Abrir Navegador' found.
+
+Also teardown failed:
+No keyword with name 'Fechar Navegador' found.</status>
+</test>
+<test id="s1-s1-t4" name="Caso de Teste 04 - Remover Produto do Carrinho" line="40">
+<kw name="Abrir Navegador" type="SETUP">
+<msg time="2025-08-14T11:46:31.716383" level="FAIL">No keyword with name 'Abrir Navegador' found.</msg>
+<status status="FAIL" start="2025-08-14T11:46:31.715829" elapsed="0.004385">No keyword with name 'Abrir Navegador' found.</status>
+</kw>
+<kw name="Fechar Navegador" type="TEARDOWN">
+<msg time="2025-08-14T11:46:31.725528" level="FAIL">No keyword with name 'Fechar Navegador' found.</msg>
+<status status="FAIL" start="2025-08-14T11:46:31.721888" elapsed="0.007507">No keyword with name 'Fechar Navegador' found.</status>
+</kw>
+<doc>Esse teste verifica a remoção de um produto no carrinho de compras</doc>
+<tag>remover_carrinho</tag>
+<status status="FAIL" start="2025-08-14T11:46:31.711914" elapsed="0.018300">Setup failed:
+No keyword with name 'Abrir Navegador' found.
+
+Also teardown failed:
+No keyword with name 'Fechar Navegador' found.</status>
+</test>
+<doc>Essa suite testa o site da Amazon</doc>
+<status status="FAIL" start="2025-08-14T11:46:31.645697" elapsed="0.089114"/>
+</suite>
+<status status="FAIL" start="2025-08-14T11:46:31.607917" elapsed="0.130310"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="4" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">adicionar_carrinho</stat>
+<stat pass="0" fail="1" skip="0">buscaprodutos</stat>
+<stat pass="0" fail="1" skip="0">categorias</stat>
+<stat pass="0" fail="1" skip="0">listabusca</stat>
+<stat pass="0" fail="1" skip="0">menus</stat>
+<stat pass="0" fail="1" skip="0">remover_carrinho</stat>
+</tag>
+<suite>
+<stat name="WebTesting" id="s1" pass="0" fail="4" skip="0">WebTesting</stat>
+<stat name="Amazon Testes" id="s1-s1" pass="0" fail="4" skip="0">WebTesting.Amazon Testes</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-08-14T11:46:31.647283" level="ERROR">Error in file 'C:\automacao_qa\CursoUdemy\RobotFramework\WebTesting\amazon_testes.robot' on line 3: Resource file 'amazon_resource.robot' does not exist.</msg>
+</errors>
+</robot>

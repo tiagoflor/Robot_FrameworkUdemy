@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3 (Python 3.13.5 on win32)" generated="2025-08-18T14:44:39.152369" rpa="false" schemaversion="5">
+<suite id="s1" name="Amazon Testes" source="C:\automacao_qa\CursoUdemy\RobotFramework\WebTesting\amazon_testes.robot">
+<test id="s1-t1" name="Caso de Teste 06 - Remover Produto do Carrinho" line="59">
+<kw name="Abrir Navegador" owner="amazon_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-08-18T14:44:40.601000" level="INFO">Opening browser 'edge' to base url 'None'.</msg>
+<msg time="2025-08-18T14:44:41.131471" level="WARN">Exception managing MicrosoftEdge: error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)</msg>
+<msg time="2025-08-18T14:44:41.131981" level="WARN">The msedgedriver version (138.0.3351.121) detected in PATH at C:\Python\Python313\Scripts\msedgedriver.exe might not be compatible with the detected MicrosoftEdge version (139.0.3405.86); currently, msedgedriver  is recommended for MicrosoftEdge 139.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-08-18T14:44:40.600827" elapsed="3.026177"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-08-18T14:44:43.627245" elapsed="0.042371"/>
+</kw>
+<doc>Abre o navegador e maximiza a janela</doc>
+<status status="PASS" start="2025-08-18T14:44:40.600358" elapsed="3.069408"/>
+</kw>
+<kw name="Dado que estou na home page da Amazon.com.br" owner="amazon_resources">
+<kw name="Acessar a home page do site Amazon.com.br" owner="amazon_resources">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-08-18T14:44:43.671623" level="INFO">Opening url 'https://www.amazon.com.br'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-08-18T14:44:43.671456" elapsed="0.947323"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-08-18T14:44:44.666375" level="INFO">Element '//button[@class='a-button-text' and text()='Continuar comprando']' is displayed.</msg>
+<arg>${BOTAO_CONTINUAR}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-18T14:44:44.619303" elapsed="0.047185"/>
+</kw>
+<msg time="2025-08-18T14:44:44.666660" level="INFO">${botao_aparece} = True</msg>
+<var>${botao_aparece}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${BOTAO_CONTINUAR}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-08-18T14:44:44.619045" elapsed="0.047643"/>
+</kw>
+<if>
+<branch type="IF" condition="${botao_aparece}">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-18T14:44:44.667276" level="INFO">Clicking element '//button[@class='a-button-text' and text()='Continuar comprando']'.</msg>
+<arg>${BOTAO_CONTINUAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-18T14:44:44.667044" elapsed="0.405794"/>
+</kw>
+<status status="PASS" start="2025-08-18T14:44:44.666814" elapsed="0.406250"/>
+</branch>
+<status status="PASS" start="2025-08-18T14:44:44.666778" elapsed="0.406392"/>
+</if>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${MENU_ELETRONICOS}</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-18T14:44:45.073348" elapsed="1.795816"/>
+</kw>
+<status status="PASS" start="2025-08-18T14:44:43.671181" elapsed="3.198157"/>
+</kw>
+<kw name="Digitar o nome de produto &quot;Xbox Series S&quot; no campo de pesquisa" owner="amazon_resources" source_name="Digitar o nome de produto &quot;${PRODUTO}&quot; no campo de pesquisa">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-18T14:44:46.870332" level="INFO">Typing text 'Xbox Series S' into text field 'twotabsearchtextbox'.</msg>
+<arg>locator=twotabsearchtextbox</arg>
+<arg>text=${PRODUTO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-18T14:44:46.870015" elapsed="0.180858"/>
+</kw>
+<status status="PASS" start="2025-08-18T14:44:46.869601" elapsed="0.181393"/>
+</kw>
+<kw name="Clicar no botão de pesquisa" owner="amazon_resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-08-18T14:44:47.051620" level="INFO">Clicking button 'nav-search-submit-button'.</msg>
+<arg>locator=nav-search-submit-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-18T14:44:47.051439" elapsed="2.546684"/>
+</kw>
+<status status="PASS" start="2025-08-18T14:44:47.051158" elapsed="2.547088"/>
+</kw>
+<kw name="Adicionar o produto &quot;Console Xbox Series S&quot; no carrinho" owner="amazon_resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-18T14:44:49.599287" level="INFO">Clicking element '//img[@alt='Console Xbox Series S']'.</msg>
+<arg>locator=//img[@alt='Console Xbox Series S']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-18T14:44:49.599027" elapsed="2.913855"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=add-to-cart-button</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-18T14:44:52.513241" elapsed="0.044539"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-18T14:44:52.558473" level="INFO">Clicking element 'add-to-cart-button'.</msg>
+<arg>locator=add-to-cart-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-18T14:44:52.558109" elapsed="0.269510"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${BTN_NAO_OBRIGADO}</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-18T14:44:52.828229" elapsed="1.657948"/>
+</kw>
+<msg time="2025-08-18T14:44:54.486371" level="INFO">${protecao_aparece} = True</msg>
+<var>${protecao_aparece}</var>
+<arg>Wait Until Element Is Visible</arg>
+<arg>locator=${BTN_NAO_OBRIGADO}</arg>
+<arg>timeout=15s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-08-18T14:44:52.827916" elapsed="1.658492"/>
+</kw>
+<if>
+<branch type="IF" condition="${protecao_aparece}">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-18T14:44:54.487298" level="INFO">Clicking element '//input[contains(@aria-labelledby,'attachSiNoCoverage-announce')]'.</msg>
+<arg>locator=${BTN_NAO_OBRIGADO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-18T14:44:54.486909" elapsed="0.127632"/>
+</kw>
+<status status="PASS" start="2025-08-18T14:44:54.486588" elapsed="0.128065"/>
+</branch>
+<status status="PASS" start="2025-08-18T14:44:54.486539" elapsed="0.128175"/>
+</if>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${ACESSAR_CARRINHO}</arg>
+<arg>timeout=20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-18T14:44:54.614888" elapsed="0.038365"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-18T14:44:54.654000" level="INFO">Clicking element '//a[contains(@class,'nav-a nav-a-2 nav-progressive-attribute')]'.</msg>
+<arg>locator=${ACESSAR_CARRINHO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-18T14:44:54.653531" elapsed="1.833396"/>
+</kw>
+<status status="PASS" start="2025-08-18T14:44:49.598617" elapsed="6.888780"/>
+</kw>
+<status status="PASS" start="2025-08-18T14:44:43.670643" elapsed="12.816865"/>
+</kw>
+<kw name="E existe o produto &quot;Console Xbox Series S&quot; no carrinho" owner="amazon_resources">
+<kw name="Verificar se o produto &quot;Console Xbox Series S&quot; foi adicionado com sucesso" owner="amazon_resources">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=//span[@class='a-size-small'][contains(.,'Xbox Series S')]</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-18T14:44:56.488746" elapsed="0.020259"/>
+</kw>
+<status status="PASS" start="2025-08-18T14:44:56.488487" elapsed="0.020661"/>
+</kw>
+<status status="PASS" start="2025-08-18T14:44:56.488096" elapsed="0.021116"/>
+</kw>
+<kw name="Quando remover o produto &quot;Console Xbox Series S&quot; do carrinho" owner="amazon_resources">
+<kw name="Remover o produto &quot;Console Xbox Series S&quot; do carrinho" owner="amazon_resources">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${EXCLUIR_ITEM_CARRINHO}</arg>
+<arg>timeout=20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-18T14:44:56.510254" elapsed="0.022456"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>locator=${EXCLUIR_ITEM_CARRINHO}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-08-18T14:44:56.532972" elapsed="0.311776"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-18T14:44:56.845855" level="INFO">Clicking element '//input[@value='Excluir']'.</msg>
+<arg>locator=${EXCLUIR_ITEM_CARRINHO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-18T14:44:56.845241" elapsed="0.146367"/>
+</kw>
+<status status="PASS" start="2025-08-18T14:44:56.510015" elapsed="0.481719"/>
+</kw>
+<status status="PASS" start="2025-08-18T14:44:56.509656" elapsed="0.482136"/>
+</kw>
+<kw name="Então o carrinho deve ficar vazio" owner="amazon_resources">
+<kw name="Verificar se o carrinho fica vazio" owner="amazon_resources">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${SEM_PRODUTO_CARRINHO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-18T14:44:56.992784" elapsed="0.870721"/>
+</kw>
+<status status="PASS" start="2025-08-18T14:44:56.992476" elapsed="0.871155"/>
+</kw>
+<status status="PASS" start="2025-08-18T14:44:56.992179" elapsed="0.871517"/>
+</kw>
+<kw name="Fechar Navegador" owner="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-08-18T14:44:57.960388" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-08-18T14:44:57.864701" elapsed="0.095840"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-08-18T14:44:57.960699" elapsed="7.778235"/>
+</kw>
+<doc>Fecha o navegador após capturar a tela</doc>
+<status status="PASS" start="2025-08-18T14:44:57.864357" elapsed="7.874683"/>
+</kw>
+<doc>Esse teste verifica a remoção de um produto no carrinho de compras</doc>
+<tag>remover_carrinho</tag>
+<status status="PASS" start="2025-08-18T14:44:40.599435" elapsed="25.139768"/>
+</test>
+<doc>Essa suite testa o site da Amazon</doc>
+<status status="PASS" start="2025-08-18T14:44:39.176495" elapsed="26.563623"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">remover_carrinho</stat>
+</tag>
+<suite>
+<stat name="Amazon Testes" id="s1" pass="1" fail="0" skip="0">Amazon Testes</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-08-18T14:44:41.131471" level="WARN">Exception managing MicrosoftEdge: error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)</msg>
+<msg time="2025-08-18T14:44:41.131981" level="WARN">The msedgedriver version (138.0.3351.121) detected in PATH at C:\Python\Python313\Scripts\msedgedriver.exe might not be compatible with the detected MicrosoftEdge version (139.0.3405.86); currently, msedgedriver  is recommended for MicrosoftEdge 139.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>

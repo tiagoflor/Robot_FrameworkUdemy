@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3 (Python 3.13.5 on win32)" generated="2025-08-27T16:08:38.186719" rpa="false" schemaversion="5">
+<suite id="s1" name="Exercicio Lista" source="C:\automacao_qa\CursoUdemy\VariaveisEscoposArgumentos\exercicio_lista.robot">
+<test id="s1-t1" name="Caso de teste Exercicio dias" line="21">
+<kw name="Meses do Ano">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-08-27T16:08:38.254379" level="INFO">Primeiro mês do ano:  janeiro tem  31 dias</msg>
+<arg>Primeiro mês do ano: ${MESES_DIAS.mes1} tem ${MESES_DIAS.diasjan}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-08-27T16:08:38.253792" elapsed="0.000645"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-08-27T16:08:38.255114" level="INFO">Segundo mês do ano:  fevereiro tem  28 dias</msg>
+<arg>Segundo mês do ano: ${MESES_DIAS.mes2} tem ${MESES_DIAS.diasfev}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-08-27T16:08:38.254534" elapsed="0.000627"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-08-27T16:08:38.255582" level="INFO">Terceiro mês do ano:  março tem  31 dias</msg>
+<arg>Terceiro mês do ano: ${MESES_DIAS.mes3} tem ${MESES_DIAS.diasmar}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-08-27T16:08:38.255240" elapsed="0.000369"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-08-27T16:08:38.255980" level="INFO">Quarto mês do ano:  abril tem  30 dias</msg>
+<arg>Quarto mês do ano: ${MESES_DIAS.mes4} tem ${MESES_DIAS.diasabr}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-08-27T16:08:38.255667" elapsed="0.000337"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-08-27T16:08:38.256429" level="INFO">Quinto mês do ano:  maio tem  31 dias</msg>
+<arg>Quinto mês do ano: ${MESES_DIAS.mes5} tem ${MESES_DIAS.diasmai}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-08-27T16:08:38.256066" elapsed="0.000391"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-08-27T16:08:38.256946" level="INFO">Sexto mês do ano:  junho tem  30 dias</msg>
+<arg>Sexto mês do ano: ${MESES_DIAS.mes6} tem ${MESES_DIAS.diasjun}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-08-27T16:08:38.256516" elapsed="0.000461"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-08-27T16:08:38.257353" level="INFO">Sétimo mês do ano:  julho tem  31 dias</msg>
+<arg>Sétimo mês do ano: ${MESES_DIAS.mes7} tem ${MESES_DIAS.diasjul}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-08-27T16:08:38.257036" elapsed="0.000341"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-08-27T16:08:38.257719" level="INFO">Oitavo mês do ano:  agosto tem  31 dias</msg>
+<arg>Oitavo mês do ano: ${MESES_DIAS.mes8} tem ${MESES_DIAS.diasago}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-08-27T16:08:38.257428" elapsed="0.000315"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-08-27T16:08:38.258116" level="INFO">Novo mês do ano:  setembro tem  30 dias</msg>
+<arg>Novo mês do ano: ${MESES_DIAS.mes9} tem ${MESES_DIAS.diasset}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-08-27T16:08:38.257795" elapsed="0.000344"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-08-27T16:08:38.258490" level="INFO">Décimo mês do ano:  outubro tem  31 dias</msg>
+<arg>Décimo mês do ano: ${MESES_DIAS.mes10} tem ${MESES_DIAS.diasout}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-08-27T16:08:38.258188" elapsed="0.000325"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-08-27T16:08:38.258882" level="INFO">Décimo primeiro mês do ano:  novembro tem  30 dias</msg>
+<arg>Décimo primeiro mês do ano: ${MESES_DIAS.mes11} tem ${MESES_DIAS.diasnov}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-08-27T16:08:38.258560" elapsed="0.000349"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-08-27T16:08:38.259275" level="INFO">Décimo segundo mês do ano:  dezembro tem  31 dias</msg>
+<arg>Décimo segundo mês do ano: ${MESES_DIAS.mes12} tem ${MESES_DIAS.diasdez}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-08-27T16:08:38.258965" elapsed="0.000338"/>
+</kw>
+<status status="PASS" start="2025-08-27T16:08:38.253375" elapsed="0.005974"/>
+</kw>
+<status status="PASS" start="2025-08-27T16:08:38.252411" elapsed="0.007488"/>
+</test>
+<doc>Exercicio tipos de variáveis: DICIONARIO</doc>
+<status status="PASS" start="2025-08-27T16:08:38.208398" elapsed="0.052666"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Exercicio Lista" id="s1" pass="1" fail="0" skip="0">Exercicio Lista</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
